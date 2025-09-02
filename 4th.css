@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    
+}
+
+div{
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    display: inline-block;
+}
+.container{
+    height: 200px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    background-color: cadetblue;
+}
+
+#one{
+    background-color: red;
+}
+#two{
+    background-color:aqua;
+}
+#three{
+    background-color: blue;
+}
+#four{
+    background-color: green;
+}
+#five{
+    background-color: yellow;
+}

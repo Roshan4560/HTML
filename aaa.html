@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = 211; // Example
+        let gender = "male";
+        if (gender === "female") {
+            if (age < 5) {
+                console.log(" FREE TRAVEL ");
+            }
+            else if (age >= 5 && age <= 8) {
+                console.log(" GET 50% DISCOUNT ");
+            }
+            else if (age > 65) {
+                console.log(" GET 70% DISCOUNT ");
+                console.log(" ELIGIBLE FOR SENIOR CITIZEN BENEFITS ");
+            }
+            else {
+                console.log(" 20% DISCOUNT ");
+            }
+        }
+        else if (gender === "male") {
+            if (age < 5) {
+                console.log(" FREE TRAVEL ");
+            }
+            else if (age >= 5 && age <= 8) {
+                console.log(" GET 50% DISCOUNT ");
+            }
+            else if (age > 65) {
+                console.log(" GET 70% DISCOUNT ");
+                console.log(" ELIGIBLE FOR SENIOR CITIZEN BENEFITS ");
+            }
+            else {
+                console.log(" NO DISCOUNT ");
+            }
+        }
+        else {
+            console.log(" NO DISCOUNT " + " Enter the correct gender title ");
+        }
+    </script>
+</body>
+</html>
