@@ -1,0 +1,50 @@
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+.image-caption-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.image-caption-block img {
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(31,38,135,0.10);
+}
+.caption-output {
+    min-height: 32px;
+    color: #1e3c72;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: 6px;
+    text-align: center;
+}
+.caption-input-area {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+}
+.caption-input-area input {
+    flex: 1;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #b0b0b0;
+    font-size: 1em;
+}
+.caption-input-area button {
+    background: #2a5298;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.caption-input-area button:hover {
+    background: #1e3c72;
+}
