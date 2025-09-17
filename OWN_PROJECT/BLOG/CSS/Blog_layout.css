@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f9fb;
+    color: #222;
+}
+header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+.logo {
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-links a:hover {
+    color: #dbeafe;
+}
+.main-content {
+    display: flex;
+    max-width: 1100px;
+    margin: 36px auto 0 auto;
+    gap: 40px;
+    padding: 0 24px;
+}
+.articles {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.preview {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    padding: 28px 24px;
+    transition: box-shadow 0.2s;
+}
+.preview:hover {
+    box-shadow: 0 4px 18px rgba(74,144,226,0.10);
+}
+.preview h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.4em;
+}
+.preview h2 a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.preview h2 a:hover {
+    color: #2561a7;
+}
+.meta {
+    color: #888;
+    font-size: 0.95em;
+    margin-bottom: 12px;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    background: #4a90e2;
+    padding: 7px 18px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 0.98em;
+    transition: background 0.2s;
+}
+.read-more:hover {
+    background: #2561a7;
+}
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.widget {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    padding: 22px 18px;
+}
+.widget h3 {
+    margin-top: 0;
+    color: #4a90e2;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.widget ul li {
+    margin-bottom: 8px;
+}
+.widget ul li a {
+    color: #2561a7;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #e3eaf6;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 48px;
+    color: #4a90e2;
+    font-size: 1em;
+}
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        gap: 0;
+    }
+    .sidebar {
+        margin-top: 36px;
+    }
+}
