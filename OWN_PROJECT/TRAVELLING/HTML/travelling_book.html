@@ -1,0 +1,278 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Booking Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #1976d2;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .filters select, .filters input {
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .card {
+            background: #fafafa;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .card-desc {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        .card-price {
+            color: #1976d2;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .booking-form {
+            background: #f1f8e9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+        .booking-form h2 {
+            margin-top: 0;
+        }
+        .booking-form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .booking-form button {
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        @media (max-width: 900px) {
+            .destinations {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Booking Site</h1>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <select>
+                <option>All Destinations</option>
+                <option>Beach</option>
+                <option>Mountain</option>
+                <option>City</option>
+            </select>
+            <select>
+                <option>Any Price</option>
+                <option>Below $500</option>
+                <option>$500 - $1000</option>
+                <option>Above $1000</option>
+            </select>
+            <input type="text" placeholder="Search destination...">
+        </div>
+        <div class="destinations">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Beach">
+                <div class="card-body">
+                    <div class="card-title">Maldives</div>
+                    <div class="card-desc">Crystal clear waters and white sandy beaches. Perfect for a relaxing getaway.</div>
+                    <div class="card-price">$1200</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Mountain">
+                <div class="card-body">
+                    <div class="card-title">Swiss Alps</div>
+                    <div class="card-desc">Breathtaking mountain views and world-class skiing adventures.</div>
+                    <div class="card-price">$950</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=400&q=80" alt="City">
+                <div class="card-body">
+                    <div class="card-title">Paris</div>
+                    <div class="card-desc">The city of lights, romance, and exquisite cuisine awaits you.</div>
+                    <div class="card-price">$800</div>
+                </div>
+            </div>
+        </div>
+        <form class="booking-form">
+            <h2>Book Your Trip</h2>
+            <label for="destination">Destination</label>
+            <select id="destination" required>
+                <option value="">Select</option>
+                <option>Maldives</option>
+                <option>Swiss Alps</option>
+                <option>Paris</option>
+            </select>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Booking Site</title>
+    <link rel="stylesheet" href="../CSS/travelling_book.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Booking Site</h1>
+    </header>
+    <div class="container">
+
+        <div class="filters">
+            <select>
+                <option>All Destinations</option>
+                <option>Beach</option>
+                <option>Mountain</option>
+                <option>Desert</option>
+                <option>Old City</option>
+                <option>Modern City</option>
+                <option>Coastal City</option>
+                <option>Tech Hub City</option>
+            </select>
+            <select>
+                <option>Any Price</option>
+                <option>Below &#8377;15,000</option>
+                <option>&#8377;15,000 - &#8377;30,000</option>
+                <option>Above &#8377;30,000</option>
+            </select>
+            <input type="text" placeholder="Search destination...">
+        </div>
+
+        <div class="destinations">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/623595614/photo/new-york-city-skyline-statue-of-liberty.webp?a=1&b=1&s=612x612&w=0&k=20&c=oSUIsK6uKeNEN60xX3j4SErLXE0iy0HQiSpPhHVxW6I=" alt="Beach">
+                <div class="card-body">
+                    <div class="card-title">Washington DC</div>
+                    <div class="card-desc">Crystal clear waters and white sandy beaches. Perfect for a relaxing getaway.</div>
+                    <div class="card-price">&#8377;1,200,000</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1545328805-926d6a0950ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8VVNBfGVufDB8fDB8fHww" alt="Mountain">
+                <div class="card-body">
+                    <div class="card-title">Swiss Calann</div>
+                    <div class="card-desc">Breathtaking mountain views and world-class skiing adventures.</div>
+                    <div class="card-price">&#8377;2,50,000</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=400&q=80" alt="City">
+                <div class="card-body">
+                    <div class="card-title">Paris</div>
+                    <div class="card-desc">The city of lights, romance, and exquisite cuisine awaits you.</div>
+                    <div class="card-price">&#8377;80,000</div>
+                </div>
+            </div>
+        </div>
+
+        <form class="booking-form">
+            <h2>Book Your Trip</h2>
+            <label for="destination">Destination</label>
+            <select id="destination" required>
+                <option value="">Select</option>
+                <option>Maldives</option>
+                <option>Swiss Alps</option>
+                <option>Paris</option>
+                <option>New York</option>
+                <option>Tokyo</option>
+                <option>Sydney</option>
+                <option>Dubai</option>
+                <option>Barcelona</option>
+                <option>Rome</option>
+                <option>London</option>
+                <option>Singapore</option>
+                <option>Bangkok</option>
+                <option>Hong Kong</option>
+            </select>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
