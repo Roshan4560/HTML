@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robarish Daba | Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Restaurant.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+    <header class="header">
+        <div class="logo">Robarish Daba</div>
+        <form class="header-search" id="header-search-form" autocomplete="off">
+            <input type="text" id="header-search-input" placeholder="Search menu..." aria-label="Search menu">
+            <button type="submit" aria-label="Search">&#128269;</button>
+        </form>
+        <nav id="main-nav" class="nav" aria-label="Main navigation">
+            <a href="menu.html" target="_self">Menu</a>
+            <a href="review.html" target="_self">Reviews</a>
+            <a href="contact.html" target="_self">Contact</a>
+        </nav>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+    <main>
+        <section class="hero animated">
+            <div class="hero-overlay">
+                <h1>Welcome to Robarish Daba</h1>
+                <p>Fresh flavors, cozy vibes, and unforgettable meals.</p>
+            </div>
+        </section>
+        <section id="menu" class="menu-section animated">
+            <h2><a href="menu.html" target="_self"> Our  Menu</a></h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="main">Main</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item starters animated" data-category="starters">
+                    <div class="menu-gallery">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Grilled Salmon" class="gallery-img active">
+                        <img src="https://images.unsplash.com/photo-1676300185165-3f543c1fcb72?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JpbGxlZCUyMHNhbG1vbnxlbnwwfHwwfHx8MA%3D%3D" alt="Grilled Salmon 2" class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1577004686904-1a4f118acf61?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGdyaWxsZWQlMjBzYWxtb258ZW58MHx8MHx8fDA%3D" alt="Grilled Salmon 3" class="gallery-img">
+
+                        <button class="gallery-prev">&#8592;</button>
+                        <button class="gallery-next">&#8594;</button>
+                    </div>
+                    <h3>Grilled Salmon Soup</h3>
+                    <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                    <span class="price">&#8377;200</span>
+                </div>
+                <div class="menu-item desserts animated" data-category="desserts">
+                    <div class="menu-gallery">
+                        <img src="https://media.istockphoto.com/id/1922618743/photo/assorted-of-scoops-ice-cream-colorful-set-of-ice-cream-of-different-flavours-side-view-of-ice.webp?a=1&b=1&s=612x612&w=0&k=20&c=hoOCdvvboaoJkWLpLjMIWN4PXYxuH13drHVSjzagVpo=" class="gallery-img active" alt="Classic Ice Cream 1">
+                        <img src="https://media.istockphoto.com/id/157472912/photo/ice-cream-composition-on-a-bowl.webp?a=1&b=1&s=612x612&w=0&k=20&c=e1yPCusQJl2scx955yuv9LUcbx5e7OcARC_VgEDdz5Y=" class="gallery-img" alt="Classic Ice Cream 2">
+                        <img src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGljZSUyMGNyZWFtfGVufDB8fDB8fHww" class="gallery-img" alt="Classic Ice Cream 3">
+
+                        <button class="gallery-prev">&#8592;</button>
+                        <button class="gallery-next">&#8594;</button>
+                    </div>
+                    <h3>Classic Organic Ice Cream</h3>
+                    <p>Juicy beef patty, cheddar, lettuce, tomato, and fries.</p>
+                    <span class="price">&#8377;150</span>
+                </div>
+                <div class="menu-item main animated" data-category="main">
+                    <div class="menu-gallery">
+                        <img src="https://images.unsplash.com/photo-1688043045896-1512865f5da3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2QlMjBpdGVtfGVufDB8fDB8fHww" class="gallery-img" alt="Boil Corn Tost 1">
+                        <img src="https://media.istockphoto.com/id/1297407181/photo/cooked-corn.webp?a=1&b=1&s=612x612&w=0&k=20&c=747w1iSSvp8RBVkxx2E0pRUF--5sT19osl3SLLiJIns=" class="gallery-img" alt="Boil Corn Tost 2">
+                        <img src="https://plus.unsplash.com/premium_photo-1725282495491-ac18e3c11edb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJvaWwlMjBjb3JufGVufDB8fDB8fHww" class="gallery-img" alt="Boil Corn Tost 3">
+
+                        <button class="gallery-prev">&#8592;</button>
+                        <button class="gallery-next">&#8594;</button>
+                    </div>
+                    <h3>Boil Corn Tost</h3>
+                    <p>Fresh veggies, creamy sauce, and parmesan cheese.</p>
+                    <span class="price">&#8377;140</span>
+                </div>
+                <div class="menu-item starters animated" data-category="starters">
+                    <div class="menu-gallery">
+                        <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" class="gallery-img" alt="Caesar Salad">
+                        <img src="https://media.istockphoto.com/id/175197961/photo/salad-plate.webp?a=1&b=1&s=612x612&w=0&k=20&c=mZo1VLF5DlFC03VyfsOlX7CWl7aZOHfeb6zCJHLTiRo=" class="gallery-img" alt="Caesar Salad 2">
+                        <img src="https://media.istockphoto.com/id/1420045123/photo/healthy-sprout-salad-with-mung-bean-sprout-chopped-onion-tomato-and-boiled-potato.webp?a=1&b=1&s=612x612&w=0&k=20&c=EBqY3qfp1d0M-IkWktCJPkbMcBaQ7a4U3rIKBCiURX4=" class="gallery-img" alt="Caesar Salad 3">
+
+                        <button class="gallery-prev">&#8592;</button>
+                        <button class="gallery-next">&#8594;</button>
+                    </div>
+                    <h3>Caesar Blue Berries</h3>
+                    <p>Crisp romaine, parmesan, croutons, and house dressing.</p>
+                    <span class="price">&#8377;100</span>
+                </div>
+                <div class="menu-item drinks animated" data-category="drinks">
+                    <div class="menu-gallery">
+                        <img src="https://media.istockphoto.com/id/1014802256/photo/close-up-of-drinks-in-test-tubes-and-long-glasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=WszylG7VVmYfbkjdXcDiBotc9m8-0v9J60TnyfZzffQ=" class="gallery-img" alt="Chilled Cold Drinks">
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29zZCUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-img" alt="Chilled Cold Drinks 2">
+                        <img src="https://images.unsplash.com/photo-1564844536306-2dca5256d9d2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29zZCUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D" class="gallery-img" alt="Chilled Cold Drinks 3">
+
+                        <button class="gallery-prev">&#8592;</button>
+                        <button class="gallery-next">&#8594;</button>
+                    </div>
+                    <h3>Cold Drinks</h3>
+                    <p>Refreshing beverages to complement your meal.</p>
+                    <span class="price">&#8377;100</span>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="specials animated">Today's Specials</h2>
+        <button class="specials-scroll-left">&#8592;</button>
+        <button class="specials-scroll-right">&#8594;</button>
+        <div class="specials-row">
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1516865131505-4dabf2efc692?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHN8ZW58MHx8MHx8fDA%3D" alt="Special Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZHN8ZW58MHx8MHx8fDA%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>Refreshing beverages to complement your meal.</p>
+                <span class="price">&#8377;1050</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1668095398227-c943ddb69d89?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZHN8ZW58MHx8MHx8fDA%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special foods. You feels very special.</p>
+                <span class="price">&#8377;1000</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1576402187878-974f70c890a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZHN8ZW58MHx8MHx8fDA%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special foods. You feels very special.</p>
+                <span class="price">&#8377;900</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1624726175512-19b9baf9fbd1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHN8ZW58MHx8MHx8fDA%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special foods. You feels very special.</p>
+                <span class="price">&#8377;600</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1666649675527-6a7859752c53?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special foods. You feels very special.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+        </div>
+
+        <h2 class="specials animated">MAIN COURSE</h2>
+        <button class="specials-scroll-left">&#8592;</button>
+        <button class="specials-scroll-right">&#8594;</button>
+        <div class="specials-row">
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1621188988909-fbef0a88dc04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1619337744329-78f4b9074fed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>Refreshing beverages to complement your meal.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1677192448752-ca770afef3cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special foods. You feels very special.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1634141613544-001d33883517?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special foods. You feels very special.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1623855244183-52fd8d3ce2f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1624726175512-19b9baf9fbd1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHN8ZW58MHx8MHx8fDA%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+        </div>
+
+        <h2 class="specials animated">STARTERS</h2>
+        <button class="specials-scroll-left">&#8592;</button>
+        <button class="specials-scroll-right">&#8594;</button>
+        <div class="specials-row">
+            <div class="special-item">
+                <img src="https://media.istockphoto.com/id/617781022/photo/baskets-of-onion-rings-curly-fries-and-cheese-sticks.webp?a=1&b=1&s=612x612&w=0&k=20&c=k_eTPGLThcifq-ltM0T-Nv-BkaniaA_9ZE4ONqZauqA=" alt="Special Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+            <div class="special-item">
+                <img src="https://media.istockphoto.com/id/1472581913/photo/homemade-kimchee-and-glass-jar.webp?a=1&b=1&s=612x612&w=0&k=20&c=UYaD5tLYJs0xTVXGVqZYs4XC-X_hWdBQDCtuDMAxGG8=" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>Refreshing beverages to complement your meal.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1677686707466-2c86b174d072?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RhcnRlciUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1590426556824-5d005c1d0ece?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3RhcnRlciUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1635527643921-ce2b9bbd5728?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RhcnRlciUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1669150849053-570c3a7d3bbe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3RhcnRlciUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+        </div>
+        <h2 class="specials animated">DESSERTS</h2>
+        <button class="specials-scroll-left">&#8592;</button>
+        <button class="specials-scroll-right">&#8594;</button>
+        <div class="specials-row">
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1714242629051-b14e10a329c1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3RhcnRlciUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 1">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Rich chocolate cake with a gooey molten center.</p>
+                <span class="price">&#8377;150</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1662192512691-2786c53eca40?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3RhcnRlciUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Fruit Tart</h3>
+                <p>Delicious tart filled with fresh seasonal fruits.</p>
+                <span class="price">&#8377;120</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1628838463043-b81a343794d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RhcnRlciUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1669150851936-13aef2ffdf69?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHN0YXJ0ZXIlMjBmb29kc3xlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1599122748322-b72723b68118?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0YXJ0ZXIlMjBmb29kc3xlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+        </div>
+
+        <h2 class="specials animated">VEGS</h2>
+        <button class="specials-scroll-left">&#8592;</button>
+        <button class="specials-scroll-right">&#8594;</button>
+        <div class="specials-row">
+            <div class="special-item">
+                <img src="https://media.istockphoto.com/id/1350252553/photo/moong-dal-cheela.webp?a=1&b=1&s=612x612&w=0&k=20&c=veMJTyZHUQCIzSqm0DPXwm90N_3K2zi48XZ7QNX8zMw=" alt="Special Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1692833836149-7f35c8d9fccb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVnZXRhcmlhbiUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>Refreshing beverages to complement your meal.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1609611181258-07aae7208da3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmVnZXRhcmlhbiUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1609611180481-d8fe3e7e256a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmVnZXRhcmlhbiUyMGZvb2RzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1617470703152-7bc3ab20893e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHZlZ2V0YXJpYW4lMjBmb29kc3xlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1609595781576-1580ff3ee291?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHx2ZWdldGFyaWFuJTIwZm9vZHN8ZW58MHx8MHx8fDA%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+        </div>
+
+        <h2 class="specials animated">NON VEGS</h2>
+        <button class="specials-scroll-left">&#8592;</button>
+        <button class="specials-scroll-right">&#8594;</button>
+        <div class="specials-row">
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1720983197848-39f51a5e4544?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5vbiUyMHZlZ2V0YXJpYW4lMjBmb29kJTIwaW4lMjBwbGF0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1744116432674-e6ff2b6d9544?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5vbiUyMHZlZ2V0YXJpYW4lMjBmb29kJTIwaW4lMjBwbGF0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>Refreshing beverages to complement your meal.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1669490884223-ca6ca27c8766?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG5vbiUyMHZlZ2V0YXJpYW4lMjBmb29kJTIwaW4lMjBwbGF0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1605655293594-92e21b3409bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG5vbiUyMHZlZ2V0YXJpYW4lMjBmb29kfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1673238111115-18d3da6ec22b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fG5vbiUyMHZlZ2V0YXJpYW4lMjBmb29kfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1690983320937-ca293f1d1d97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fG5vbiUyMHZlZ2V0YXJpYW4lMjBmb29kfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+        </div>
+
+        <h2 class="specials animated">SNACKS</h2>
+        <button class="specials-scroll-left">&#8592;</button>
+        <button class="specials-scroll-right">&#8594;</button>
+        <div class="specials-row">
+            <div class="special-item">
+                <img src="https://media.istockphoto.com/id/1157402361/photo/mini-samosa-with-sauce.webp?a=1&b=1&s=612x612&w=0&k=20&c=JuD_PgAANUCv3i5EP3384btNwJz_HT0PEov5XSMoXBk=" alt="Special Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+            <div class="special-item">
+                <img src="https://media.istockphoto.com/id/1250440213/photo/shells.webp?a=1&b=1&s=612x612&w=0&k=20&c=ixQjIKPNWMbFxIZ-0rwDpbtKFkIqENoDw28nSQ6RaNI=" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>Refreshing beverages to complement your meal.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1669137055841-06079da2325a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c25hY2tzJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://media.istockphoto.com/id/1157402361/photo/mini-samosa-with-sauce.webp?a=1&b=1&s=612x612&w=0&k=20&c=JuD_PgAANUCv3i5EP3384btNwJz_HT0PEov5XSMoXBk=" alt="Special Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+            <div class="special-item">
+                <img src="https://media.istockphoto.com/id/1250440213/photo/shells.webp?a=1&b=1&s=612x612&w=0&k=20&c=ixQjIKPNWMbFxIZ-0rwDpbtKFkIqENoDw28nSQ6RaNI=" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>Refreshing beverages to complement your meal.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1679501556338-97bbf46011be?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c25hY2tzJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1680370168339-a1779c66aab0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNuYWNrcyUyMGZvb2R8ZW58MHx8MHx8fDA%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+        </div>
+
+        <h2 class="specials animated">DRINKS</h2>
+        <button class="specials-scroll-left">&#8592;</button>
+        <button class="specials-scroll-right">&#8594;</button>
+        <div class="specials-row">
+            <div class="special-item">
+                <img src="https://plus.unsplash.com/premium_photo-1670270203164-aa65468a9c67?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHJpbmtzfGVufDB8fDB8fHww" alt="Special Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly seasoned, served with lemon butter sauce.</p>
+                <span class="price">&#8377;200</span>
+            </div>
+            <div class="special-item">
+                <img src="https://media.istockphoto.com/id/1014802256/photo/close-up-of-drinks-in-test-tubes-and-long-glasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=WszylG7VVmYfbkjdXcDiBotc9m8-0v9J60TnyfZzffQ=" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>Refreshing beverages to complement your meal.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJpbmtzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1481671703460-040cb8a2d909?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZHJpbmtzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZHJpbmtzfGVufDB8fDB8fHww" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+            <div class="special-item">
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D" alt="Special Dish 2">
+                <h3>Chilled Cold Drinks</h3>
+                <p>very special food.</p>
+                <span class="price">&#8377;100</span>
+            </div>
+        </div>
+
+        <section id="reviews" class="reviews-section animated">
+            <h2>Customer Reviews</h2>
+            <form id="review-form" aria-label="Submit a review">
+                <input type="text" id="reviewer" placeholder="Your name" required aria-label="Your name">
+                <textarea id="review-text" placeholder="Your review" required aria-label="Your review"></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div class="reviews" id="reviews-list">
+                <div class="review">
+                    <p>"Absolutely delicious! The salmon was cooked to perfection."</p>
+                    <span>- Raj S.</span>
+                </div>
+                <div class="review">
+                    <p>"Cozy atmosphere and friendly staff. Highly recommend!"</p>
+                    <span>- Alex R.</span>
+                </div>
+                <div class="review">
+                    <p>"Best burger in town. Will be back for more!"</p>
+                    <span>- Mayank   T.</span>
+                </div>
+            </div>
+        </section>
+         <div class="map-container" aria-label="Google Map showing restaurant location" tabindex="0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902393665429!2d90.39150931543136!3d23.75090339458926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85b1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sYour%20Restaurant%20Name!5e0!3m2!1sen!2sbd!4v1680000000000!5m2!1sen!2sbd"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" aria-label="Google Map"></iframe>
+            </div>
+        <div id="opening-hours" class="opening-hours" aria-live="polite" tabindex="0"></div>
+    </main>
+    <footer class="footer">
+        &copy; 2025 Delish Dine. All rights reserved.
+    </footer>
+    <script src="../JS/Restaurant.js"></script>
+</body>
+</html>
