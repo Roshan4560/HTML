@@ -1,0 +1,217 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Caption Generator</title>
+    <link rel="stylesheet" href="image-caption-generator.css">
+    <style>
+        .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        .image-caption-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .image-caption-block img {
+            width: 160px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(31,38,135,0.10);
+        }
+        .caption-output {
+            min-height: 32px;
+            color: #1e3c72;
+            font-size: 1.1em;
+            font-weight: 500;
+            margin-top: 6px;
+            text-align: center;
+        }
+        .caption-input-area {
+            display: flex;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .caption-input-area input {
+            flex: 1;
+            padding: 6px 10px;
+            border-radius: 8px;
+            border: 1px solid #b0b0b0;
+            font-size: 1em;
+        }
+        .caption-input-area button {
+            background: #2a5298;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .caption-input-area button:hover {
+            background: #1e3c72;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Image Caption Generator</h2>
+        <div class="image-section">
+            <div class="image-caption-block">
+                <img src="deep mandal.jpg" alt="Preview Image 1">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+        <div class="image-section">
+            <div class="image-caption-block">
+                <img src="https://images.unsplash.com/photo-1691739263748-7b502866d43a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZSUyMHBob3RvfGVufDB8fDB8fHww" alt="Preview Image 1">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+            <div class="image-caption-block">
+                <img src="https://images.unsplash.com/photo-1692623622428-531202a41e48?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZSUyMHBob3RvfGVufDB8fDB8fHww" alt="Preview Image 2">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+            <div class="image-caption-block">
+                <img src="https://images.unsplash.com/photo-1672773460171-320dff072a1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG5hdHVyZSUyMHBob3RvfGVufDB8fDB8fHww" alt="Preview Image 3">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+            <div class="image-caption-block">
+                <img src="https://media.istockphoto.com/id/505221662/photo/elephants-in-river.webp?a=1&b=1&s=612x612&w=0&k=20&c=yApLmVuT4P5Qt4AeQU1YcLYBMdvzJEQjYKpdwJBaIvU=" alt="Preview Image 4">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+            <div class="image-caption-block">
+                <img src="https://media.istockphoto.com/id/944812540/photo/mountain-landscape-ponta-delgada-island-azores.jpg?s=612x612&w=0&k=20&c=mbS8X4gtJki3gGDjfC0sG3rsz7D0nls53a0b4OPXLnE=" alt="Preview Image 5">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Attach event listeners to each form
+        document.querySelectorAll('.image-caption-block').forEach(block => {
+            const form = block.querySelector('form');
+            const input = form.querySelector('input');
+            const output = block.querySelector('.caption-output');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const caption = input.value.trim();
+                if (caption) {
+                    output.textContent = caption;
+                    input.value = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Caption Generator</title>
+    <link rel="stylesheet" href="../CSS/image_gallery.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Image Caption Generator</h2>
+        <div class="image-section">
+            <div class="image-caption-block">
+                <img src="../image_gallery.jpg" alt="Preview Image 1">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+        <div class="image-section">
+            <div class="image-caption-block">
+                <img src="https://images.unsplash.com/photo-1691739263748-7b502866d43a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZSUyMHBob3RvfGVufDB8fDB8fHww" alt="Preview Image 1">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+            <div class="image-caption-block">
+                <img src="https://images.unsplash.com/photo-1692623622428-531202a41e48?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZSUyMHBob3RvfGVufDB8fDB8fHww" alt="Preview Image 2">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+            <div class="image-caption-block">
+                <img src="https://images.unsplash.com/photo-1672773460171-320dff072a1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG5hdHVyZSUyMHBob3RvfGVufDB8fDB8fHww" alt="Preview Image 3">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+            <div class="image-caption-block">
+                <img src="https://media.istockphoto.com/id/505221662/photo/elephants-in-river.webp?a=1&b=1&s=612x612&w=0&k=20&c=yApLmVuT4P5Qt4AeQU1YcLYBMdvzJEQjYKpdwJBaIvU=" alt="Preview Image 4">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+            <div class="image-caption-block">
+                <img src="https://media.istockphoto.com/id/944812540/photo/mountain-landscape-ponta-delgada-island-azores.jpg?s=612x612&w=0&k=20&c=mbS8X4gtJki3gGDjfC0sG3rsz7D0nls53a0b4OPXLnE=" alt="Preview Image 5">
+                <form class="caption-input-area">
+                    <input type="text" placeholder="Enter your caption..." maxlength="100" required>
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div class="caption-output"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Attach event listeners to each form
+        document.querySelectorAll('.image-caption-block').forEach(block => {
+            const form = block.querySelector('form');
+            const input = form.querySelector('input');
+            const output = block.querySelector('.caption-output');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const caption = input.value.trim();
+                if (caption) {
+                    output.textContent = caption;
+                    input.value = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
