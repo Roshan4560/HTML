@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #4a90e2;
+}
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+.plan {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 28px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.plan.featured {
+    border: 2px solid #4a90e2;
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(74,144,226,0.12);
+}
+.plan h2 {
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+.plan .price {
+    font-size: 2.2em;
+    color: #222;
+    margin: 18px 0 12px 0;
+}
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px 0;
+}
+.plan ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+.plan ul li:last-child {
+    border-bottom: none;
+}
+.plan button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1em;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.plan button:hover {
+    background: #2561a7;
+}
+@media (max-width: 1000px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+}
